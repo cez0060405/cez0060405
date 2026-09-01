@@ -1,20 +1,20 @@
+# cez0060405
+
 ### I run a personal AI agent like a production system
 
-Long-term single-machine deployment of [Hermes Agent](https://github.com/NousResearch/hermes-agent) (by Nous Research) on Windows 11 — and the engineering that keeps it honest over months of daily use.
+我在 Windows 上长期跑一个个人 AI 助手（Hermes Agent），像运维生产系统一样维护它，已经跑了好几个月。
 
-**📌 Featured: [personal-agent-ops](https://github.com/cez0060405/personal-agent-ops)** — battle-tested assets from that deployment:
+**📌 实战资产：[personal-agent-ops](https://github.com/cez0060405/personal-agent-ops)**
 
-- 🧪 **Decision-behavior regression suite** — 125 golden samples, 3 labels per sample; routing accuracy 91.2% → 97.6% measured across model swaps
-- 🔍 **Provider dilution auditor** — catches silent model substitution behind subscription channels (anti-pollution questions + multi-sampling vs official API)
-- 🛡️ **Stream watchdog** — unattended mid-stream-drop detection with auto-resume; append-only incident ledger, judged by data not vibes
-- 🧩 **Skill-engineering samples** — aligned with the Agent Skills open standard
+都是真跑过、踩坑踩出来的东西：
 
-**🔧 Open source — NousResearch/hermes-agent**
+- 🧪 **决策回归测试** —— 给 AI 助手出 125 道"选择题"，看它每次选得对不对。换模型后准确率从 91% 提到 97%
+- 🔍 **模型偷换检测器** —— 有些订阅服务会悄悄用便宜模型冒充贵的，我写了个工具专门抓这个
+- 🛡️ **断流看门狗** —— AI 助手跑着跑着突然断线，它自动检测并续上，全程留记录
+- 🧩 **技能工程样例** —— 符合 Agent Skills 开放标准的技能写法
 
-- [#96764](https://github.com/NousResearch/hermes-agent/issues/96764) — scripting contract for `config set` (no `--quiet`, misleading confirmations in non-interactive runs)
-- [#80946](https://github.com/NousResearch/hermes-agent/issues/80946) — Windows artifact paths opened as `C:\...` instead of `file://` URLs; my fix PR was closed after upstream re-architected the same area (issue still open, awaiting upstream's own fix)
-- Version-anchored data points on config-write triage
+**🔧 开源贡献**
+
+- [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) —— 给配置命令提过脚本化支持的建议（#96764），修过 Windows 文件路径问题（#80946）
 
 > 个人级 Agent 工程：让 Agent 长期跑得对，比演示它能干什么更难。
-
-<!-- metrics referenced above are reproducible from the linked repo's own results files -->
