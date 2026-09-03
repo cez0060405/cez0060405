@@ -15,7 +15,8 @@
 
 **🔧 开源贡献**
 
-- [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) —— 给配置命令提过脚本化支持的建议（#96764），修过 Windows 文件路径问题（#80946）
+- 🏆 **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** —— 24.1 万 star 项目，我是**第 2821 位贡献者**（[graphs/contributors](https://github.com/NousResearch/hermes-agent/graphs/contributors)）
+- 给配置命令提过脚本化支持的建议（#96764），修过 Windows 文件路径问题（#80946）
 - ✅ **已合并：启动不再卡死** —— 修复 Windows 上启动时孤儿进程清理过慢导致的黑屏/卡 5 分钟（[#101929](https://github.com/NousResearch/hermes-agent/pull/101929)，由我的 [#100774](https://github.com/NousResearch/hermes-agent/pull/100774) 抢救合并，作者身份保留）
 - 还有 2 个桌面端修复在等合并：
   - **"问一次答三次"** —— 工具调用过程中 AI 的中间过程不再和最终答案长得一样，加了"Working"标签区分（[#100777](https://github.com/NousResearch/hermes-agent/pull/100777)）
