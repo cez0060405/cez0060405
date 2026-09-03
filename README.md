@@ -17,7 +17,7 @@
 
 - 🏆 **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** —— 24.1 万 star 项目，我是**第 2821 位贡献者**（[graphs/contributors](https://github.com/NousResearch/hermes-agent/graphs/contributors)）
 - 给配置命令提过脚本化支持的建议（#96764），修过 Windows 文件路径问题（#80946）
-- ✅ **已合并：启动不再卡死** —— 修复 Windows 上启动时孤儿进程清理过慢导致的黑屏/卡 5 分钟（[#101929](https://github.com/NousResearch/hermes-agent/pull/101929)，由我的 [#100774](https://github.com/NousResearch/hermes-agent/pull/100774) 抢救合并，作者身份保留）
+- ✅ **已合并：启动不再卡死** —— 修复 Windows 上启动时孤儿进程清理过慢导致的黑屏/卡 5 分钟（[#101929](https://github.com/NousResearch/hermes-agent/pull/101929)）。我的 [#100774](https://github.com/NousResearch/hermes-agent/pull/100774) 因没带测试被关闭，但维护者**认可代码价值，专门抢救（salvage）cherry-pick 合并**，补测试后**全绿通过**，作者身份保留
 - 还有 2 个桌面端修复在等合并：
   - **"问一次答三次"** —— 工具调用过程中 AI 的中间过程不再和最终答案长得一样，加了"Working"标签区分（[#100777](https://github.com/NousResearch/hermes-agent/pull/100777)）
   - **断连诊断** —— 给 WebSocket 断连加了心跳计数和静默时长日志，方便排查周期性掉线（[#100779](https://github.com/NousResearch/hermes-agent/pull/100779)）
